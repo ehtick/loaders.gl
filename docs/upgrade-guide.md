@@ -1,8 +1,8 @@
 # Upgrade Guide
 
-## Upgrading to v4.3 (In development)
+## Upgrading to v4.3
 
-**Breaking Changes**
+**Minor Breaking Changes**
 
 - `loaders.gl/core` - Improved loader type inference: `load()`, `parse()`, etc now infer correct option and return types even when an array of loaders is passed. This can lead to previously undetected type errors now being reported and breaking your build, requiring you to fix the errors.
 - `loaders.gl/core` - internal tile index in `Source` classes has changed from `tileIndex.zoom` to `tileIndex.z`. Should not impact most applications.
